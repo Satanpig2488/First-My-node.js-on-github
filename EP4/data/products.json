@@ -1,0 +1,25 @@
+{
+    "products": [
+      {
+        "id": "0001",
+        "name": "Mac Book Laptop computer",
+        "price": 150000,
+        "descript": "Free Bag!!!",
+        "image": "images/products/product1.png"
+      },
+      {
+        "id": "0002",
+        "name": "Gray Swether",
+        "price": 101,
+        "descript": "Swether",
+        "image": "images/products/product2.png"
+      },
+      {
+        "id": "0003",
+        "name": "Sony head phone ANC",
+        "price": 102,
+        "descript": "Has Anc too.",
+        "image": "images/products/product3.png"
+      }
+    ]
+  }

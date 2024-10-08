@@ -6,13 +6,27 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- Routing to product page by query string-->
+    <h1>Routing to product page by query string</h1>
+    <form method="get" action="/products_query">
+        ใส่รหัสสินค้า<input type="text" name="product_id" value="ใส่รหัสสินค้าที่นี่">
+        <input type="submit">
+    </form>
+    <hr>
+    <!-- End of Routi ng to product page-->
+    <!-- Routing to product page by parameter-->
+    <h1>Routing to product page by parameter</h1>
+    <% Object.values(products).forEach(function(products){ %>
+        ....<a href="/products_param/<%= products.id %>"> <%= products.name %> </a>
+    <%}) %>
+    <hr>
+    <!-- End of Routi ng to product page by parameter-->
     <h1>Hello <%=name%></h1>
     <!-- Get and show data -->
     <h1>Hello EJS Engine</h1>
     <%= name %>.<%= lname %>.<%= age %>
     <%- address %>
     <hr>
-    <!-- End Get and show data -->
     <!-- Condition If -->
     IF of EJS
     <% if(age>=18){ %> 
@@ -60,6 +74,7 @@
     <% Object.values(acc).forEach(function($acc){%>
         <%= $acc.accname %>..*..<%= $acc.accbrand %>...*....<%= $acc.accmodel %>...*...<%= $acc.acccolor %><br>
     <%}) %>
+    <!-- End Get and show data -->
     <hr>
 </body>
 </html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello <%=name%></h1>
+    <!-- Get and show data -->
+    <h1>Hello EJS Engine</h1>
+    <%= name %>.<%= lname %>.<%= age %>
+    <%- address %>
+    <hr>
+    <!-- End Get and show data -->
+    <!-- Condition If -->
+    IF of EJS
+    <% if(age>=18){ %> 
+        <p><h1>Pass</h1></p> 
+    <% } else {%>
+        <p><h1>Not Pass</h1></p> 
+    <% } %>
+    <hr>
+    <!-- End Condition If -->
+    <!-- For Loop -->
+     For Loop<br>
+    <% for(i=1;i<=10;i++) {%>
+        แสดงผลรอบที่ <%= i %><br>
+    <%}%>
+    <hr>
+    <!-- End For Loop -->
+    <!-- Get Array -->
+    Array<br>
+    แสดงผลครั้งเดียว .... <%= car  %><br>
+    เลือกแสดงผลบาง index..... <%= car[0] %>*<%= car[2] %><br>
+    มีรถทั้งหมด <%=  car.length %> คัน<br>
+    <ol>
+    <% for(i=0;i<car.length;i++) {%>
+        <li>แสดงผลรถ <%= car[i] %> จาก for loop<br>
+    <%}%>
+    </ol>
+    <ol>
+        <% for(index in car) {%>
+            <li>แสดงผลรถ <%= car[index] %> จาก for in loop<br>
+        <%}%>
+    </ol>
+    <ul>
+        <%
+            car.map((i)=>{ %>
+                <li>แสดงผลรถ <%= i %> จาก .map loop</li>
+            <%})
+        %>
+    </ul>
+    <hr>
+    <!-- End Get Array -->
+    <!-- Get Object Array -->
+    Object inside Array<br>
+    ระบุแบบง่าย <%= products  %><br>
+    วน Loop แสดง Object ด้วย forEach<br>
+    <% Object.values(acc).forEach(function($acc){%>
+        <%= $acc.accname %>..*..<%= $acc.accbrand %>...*....<%= $acc.accmodel %>...*...<%= $acc.acccolor %><br>
+    <%}) %>
+    <hr>
+</body>
+</html>

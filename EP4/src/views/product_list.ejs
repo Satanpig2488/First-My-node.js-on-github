@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product</title>
+    <title>Product List page</title>
 </head>
 <body>
     <ul>
         <% products.map((products)=>{ %>
-            <li>แสดงผลสินค้า <%= products.name %> จาก .map loop</li>
+            <li>แสดงผลสินค้า <a href="/products_param/<%= products.id %>"><%= products.name %> </a>จาก .map loop</li>
             <p><%= products.descript %></p>
         <%})%>
     </ul>

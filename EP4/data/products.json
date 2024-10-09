@@ -1,25 +1,23 @@
-{
-    "products": [
+[
       {
         "id": "0001",
-        "name": "Mac Book Laptop computer",
+        "name": "Mac Book Laptop computer assign by json",
         "price": 150000,
-        "descript": "Free Bag!!!",
+        "descript": "Free Bag!!! assign by json",
         "image": "images/products/product1.png"
       },
       {
         "id": "0002",
-        "name": "Gray Swether",
+        "name": "Gray Swether assign by json",
         "price": 101,
-        "descript": "Swether",
+        "descript": "Swether assign by json",
         "image": "images/products/product2.png"
       },
       {
         "id": "0003",
-        "name": "Sony head phone ANC",
+        "name": "Sony head phone ANC assign by json",
         "price": 102,
-        "descript": "Has Anc too.",
+        "descript": "Has Anc too. assign by json",
         "image": "images/products/product3.png"
       }
-    ]
-  }
+]
